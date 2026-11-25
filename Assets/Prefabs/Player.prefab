@@ -19,9 +19,11 @@ GameObject:
   - component: {fileID: 6581296947438286503}
   - component: {fileID: 5824479656000701755}
   - component: {fileID: 3601045116130782498}
+  - component: {fileID: 6732362909808408360}
+  - component: {fileID: 5962436354607379281}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,7 +90,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 125f6220a7c8c4eb69f372a026d70405, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -269,3 +271,31 @@ MonoBehaviour:
     m_Keys: []
     m_Values: 
   canPickUp: 0
+--- !u!208 &6732362909808408360
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027456741095496242}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.25, y: 0.355, z: 0.25}
+  m_MoveThreshold: 0.02
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.15
+--- !u!114 &5962436354607379281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027456741095496242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d83ecd8465aec349a1c4a3534945b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

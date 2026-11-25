@@ -24,7 +24,7 @@ namespace Player
         {
             if (!(Time.time > _spawnTimeCounter)) return;
             if (!attackPressed) return;
-            print("lvl1");
+           
             
             StartCoroutine(FireDelay(moveDirection));
 
@@ -34,7 +34,7 @@ namespace Player
             {
                 _spawnTimeCounter = Time.time + spawnTime;
                 yield return  new WaitForSeconds(0.17f);
-                print("lvl3");
+              
                 var projectileClone = Instantiate(projectilePrefab, UpdateSpawnPosition(), Quaternion.identity);
                
                 projectileClone.TryGetComponent(out Rigidbody2D rb2D);
